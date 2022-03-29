@@ -1,0 +1,80 @@
+递归创建目录，即使上级目录不存在，会按目录层级自动创建目录   mkdir -p
+-m    选项指定新建文件夹的文件訪问模式为770
+
+444 r--r--r--
+600 rw-------
+644 rw-r--r--
+666 rw-rw-rw-
+700 rwx------
+744 rwxr--r--
+755 rwxr-xr-x
+777 rwxrwxrwx
+
+从左至右，
+
+1-3位数字代表文件所有者的权限，
+
+4-6位数字代表同组用户的权限，
+
+7-9数字代表其他用户的权限。
+
+读取权限：等于4 用 r 表示
+
+写入权限：等于2 用 w 表示
+
+执行权限：等于1 用 x 表示
+
+
+touch  创建一个文件
+rm 删除文件命令  -r递归删除  -f强制删除
+rmdir 删除文件夹
+mkdir 创建文件夹
+
+
+
+history查看历史命令
+last登录地址
+top查看进程
+du -sh *查看子目录大小
+
+
+cat输出文件内容   more和less也可以
+
+
+
+ll=ls -l  查看文件夹下详细信息
+
+
+
+cat << EOF > 某文件    https://blog.csdn.net/robin90814/article/details/86705155
+
+命令后面加& 表示在后台执行
+
+
+
+shell脚本特殊符号
+https://blog.csdn.net/justin_hua/article/details/1715154
+https://www.jianshu.com/p/c578a140caab
+
+
+read -p 'please input you choice:\n' choice
+回车后屏幕会显示：
+please input you choice:
+那么之后你输入的东西就会被保存到choice变量中了
+
+
+
+-eq(equal)     : 测试两个整数是否相等；比如 $A -eq $B
+
+       -ne(inequality) : 测试两个整数是否不等；不等，为真；相等，为假；
+
+       -gt(greter than) : 测试一个数是否大于另一个数；大于，为真；否则，为假；
+
+       -lt(less than)  : 测试一个数是否小于另一个数；小于，为真；否则，为假；
+
+       -ge(greter equal): 大于或等于
+
+        -le(less equal) ：小于或等于   
+
+
+-o 或      -a且
